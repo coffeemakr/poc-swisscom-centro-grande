@@ -40,5 +40,8 @@ So using a static DNS server is an easy and save way to protect yourself:
 * [List of public DNS servers](https://duckduckgo.com/?q=public+dns+server)
 * [TOR DNS Resolver](https://trac.torproject.org/projects/tor/wiki/doc/DnsResolver)
 
+### Server side
+ * Escape or disallow spaces in hostnames.
+ * Add a suffix to hostsnames (e.g. `.local`) or disallow dots in hostnames.
 
 [1]: https://en.wikipedia.org/wiki/Hosts_%28file%29
