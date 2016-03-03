@@ -1,4 +1,7 @@
 # Escaping from CLISH
+
+For impatient readers: There is a TL;DR at the end.
+
 ## Short intro in CLISH
 
 ```
