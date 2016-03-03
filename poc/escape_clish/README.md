@@ -15,7 +15,7 @@ Welcome
 ADB#
 ```
 
-CLISH is a restricted shell which supports only a set of predefined
+[CLISH][1] is a restricted shell which supports only a set of predefined
 commands. Is seems to be developed by a single person, Graeme McKerrell,
  and was last updated 2013-04-26.
 
@@ -30,7 +30,7 @@ The name is constant and there is no such thing like subcommands. So it's very
 simple and a name may be for example `ping` or `config terminal`.
 The interesting parts are the parameters and the action. The action are
 some shell commands(!) in which the parameters can be used as environment
-variables. To disallow [command injection][1] you can restrict the parameter
+variables. To disallow [command injection][2] you can restrict the parameter
 by using a type.
 
 ### Types
@@ -157,4 +157,5 @@ Sanitizing insecure strings by using the type definition from the reference shou
 Paste the following code:
 `tcpdump enable file filter br0 \ "; /bin/sh -c /bin/sh \"`
 
-[1][https://www.owasp.org/index.php/Command_Injection]
+[1][http://clish.sourceforge.net/]
+[2][https://www.owasp.org/index.php/Command_Injection]
