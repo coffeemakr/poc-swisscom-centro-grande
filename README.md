@@ -2,7 +2,7 @@
 
 ## Known Security Holes
 ### 6.14.06
-* XSS with DHCP
+* [XSS with DHCP][dns_spoofing]
 * DNS spoofing with DHCP
 
 
