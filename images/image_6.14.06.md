@@ -25,9 +25,9 @@ mv _${FILE}.extracted ${VERSION}
 
 ## User Interface
 
-|                      |                                    |
+| Web interface        |                                    |
 | -------------------- | ---------------------------------- |
-| Webserver            | nhttpd - Nostromo webserver        |
+| Server               | nhttpd - Nostromo webserver        |
 | Executable           | `/usr/sbin/nhttpd` (Matches the "ADB Broadband HTTP Server" header) |
 | Configuration Script | `/etc/ah/UserInterface.sh`         |
 
@@ -45,7 +45,7 @@ notfound 301 /ui/swc/overview/index
 
 ## Restricted Shell
 
-The restricted shell (when loggin in over ssh) is [CLISH (Command Line Interface SHell)](http://clish.sourceforge.net/).
+The restricted shell (when loggin in over ssh) is [CLISH](http://clish.sourceforge.net/).
 Its configuration lies in `/etc/clish`
 
 From the docs: When the "clish" shell is launched it searches the directories held in the CLISH_PATH environment variable (or "/etc/clish:~/.clish" by default) for any files with a ".xml" extension.
@@ -62,7 +62,7 @@ There are different views with a set of commands.
 Views (`grep -i "<VIEW" -r .`):
 
 | View | File | Access Command |
-| ---- | ---- | - |
+| ---- | ---- | -------------- |
 | pirelli-view | main.xml | Default |
 | factory-view | main.xml | `factory` |
 | pirelli-config-view | config-view.xml | `configure terminal` |
@@ -106,11 +106,7 @@ Views (`grep -i "<VIEW" -r .`):
   * `configure terminal` > `cli-authentication-stop`
 
 Restricted by `cli-authentication` which creates `/tmp/clish-cwmp-voip`.
-The password must match:
-
-```sh
-cmclient GETV Device.UserInterface.X_ADB_CLIPassword
-```
+The password must match: `V0iPcon7ro1!` ([source](http://www.tuxone.ch/2015/01/swisscom-sip-zugangsdaten-auslesen.html))
 
   * `configure terminal` > `dhcp` (echo "")
   * `configure terminal` > `dhcp provider-id <provider_id>`
@@ -131,9 +127,11 @@ cmclient GETV Device.UserInterface.X_ADB_CLIPassword
 I assume all configuration files form Swisscom are stored in `/tmp` because
 there are some tangling links.
 
+
 ```sh
 find -L -type l -printf '%p -> %l\n'
 ```
+
 
 ```
 ./etc/voip -> /tmp/voip

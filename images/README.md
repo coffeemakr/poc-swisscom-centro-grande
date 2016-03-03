@@ -2,13 +2,17 @@
 
 ## Download
 According to my tests you have to be in a Swisscom (customer) network to
-download firmware images .  
+download firmware images.
 
-### Versions
 
+### Official Download links
 * [Current Version](http://rmsdl.bluewin.ch/pirelli/Vx226N1_current_epicentro_release.sig)
-* [6.14.06 (Vx226x1_61406.sig)](http://rmsdl.bluewin.ch/pirelli/Vx226x1_61406.sig)
-* [????](http://rmsdl.bluewin.ch/pirelli/Vx226N1_50033.rmt)
+* [6.14.06](http://rmsdl.bluewin.ch/pirelli/Vx226x1_61406.sig)
+* [6.02.12](http://rmsdl.bluewin.ch/pirelli/Vx226x1_60212.rmt)
+* [5.00.33](http://rmsdl.bluewin.ch/pirelli/Vx226N1_50033.rmt)
+
+### Mirror
+* ftp://ftp.tuxone.ch/Pirelli/Gen6 
 
 ## Version Info
 
