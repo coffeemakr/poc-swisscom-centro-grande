@@ -12,7 +12,9 @@ binwalk -D squashfs:.fs ${FILE}
 mv _${FILE}.extracted ${VERSION}
 ```
 
+
 ### Content
+
 
 | Offset      | Name               | Content            |
 | ----------- | ------------------ | ------------------ |
@@ -23,15 +25,18 @@ mv _${FILE}.extracted ${VERSION}
 | 0x120100    | Main Squash FS     |                    |
 | 0xAE0100    | Recovery Squash FS |                    |
 
+
 ## User Interface
 
-|                      |                                    |
+| Web interface        |                                    |
 | -------------------- | ---------------------------------- |
 | Webserver            | nhttpd - Nostromo webserver        |
 | Executable           | `/usr/sbin/nhttpd` (Matches the "ADB Broadband HTTP Server" header) |
 | Configuration Script | `/etc/ah/UserInterface.sh`         |
 
+
 ### Configuration:
+
 ```
 serverroot /www
 serveradmin webmaster@adbglobal.com
@@ -62,7 +67,7 @@ There are different views with a set of commands.
 Views (`grep -i "<VIEW" -r .`):
 
 | View | File | Access Command |
-| ---- | ---- | - |
+| ---- | ---- | -------------- |
 | pirelli-view | main.xml | Default |
 | factory-view | main.xml | `factory` |
 | pirelli-config-view | config-view.xml | `configure terminal` |
