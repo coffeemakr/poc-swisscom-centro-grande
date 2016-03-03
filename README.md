@@ -5,6 +5,7 @@
 * [XSS with Hostname](poc/xss_hostname/)
 * [DNS spoofing with DHCP](poc/dns_spoofing/)
 * [Clish escaping (shell access)](poc/escape_clish/)
+* [Kill root processes (requires shell and web interface access)](poc/kill_root_from_shell)
 
 ## Related Projects
 * https://github.com/antoinealb/swisscom_centro_grande
