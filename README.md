@@ -10,4 +10,4 @@
 * https://github.com/antoinealb/swisscom_centro_grande
 
 ## Weblinks
-* (https://www.swisscom.ch/en/about/sustainability/digital-switzerland/security/bug-bounty.html)[Swisscom Bug Bounty with "Rectified Security Gaps"]
+* [Swisscom Bug Bounty with "Rectified Security Gaps"](https://www.swisscom.ch/en/about/sustainability/digital-switzerland/security/bug-bounty.html)
