@@ -4,7 +4,7 @@
 ### 6.14.06
 * [XSS with Hostname](poc/xss_hostname/)
 * [DNS spoofing with DHCP](poc/dns_spoofing/)
-* [Clish escaping (shell access)](proc/escape_clish/)
+* [Clish escaping (shell access)](poc/escape_clish/)
 
 ## Related Projects
 * https://github.com/antoinealb/swisscom_centro_grande
