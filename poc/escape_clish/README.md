@@ -20,7 +20,9 @@ commands. Is seems to be developed by a single person, Graeme McKerrell,
  and was last updated 2013-04-26.
 
 ### Views
-These are used to  define "views" which contain a set of commands. If you type in `config terminal` for example the shell can open another view with configuration command and with `exit` you can go back to the view.</p>
+These are used to  define "views" which contain a set of commands. If you type
+in `config terminal` for example the shell can open another view with
+configuration command and with `exit` you can go back to the view.
 
 ### Commands
 A command has basically a name, zero or more parameter and an action.
