@@ -110,9 +110,13 @@ Views (`grep -i "<VIEW" -r .`):
   * `configure terminal` > `cli-authentication <password>`
   * `configure terminal` > `cli-authentication-stop`
 
+
+### VOIP Control
+
 Restricted by `cli-authentication` which creates `/tmp/clish-cwmp-voip`.
 The password must match: `V0iPcon7ro1!` ([source](http://www.tuxone.ch/2015/01/swisscom-sip-zugangsdaten-auslesen.html))
 
+The following commands are available after "login":
   * `configure terminal` > `dhcp` (echo "")
   * `configure terminal` > `dhcp provider-id <provider_id>`
   * `configure terminal` > `dhcp help`
