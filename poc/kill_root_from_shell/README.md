@@ -6,10 +6,10 @@ web interface is able to kill processes with root rights.
 ## Description
 
 The web interface allows the execution of traceroute and ping. Both processes
-are run by root? (to be verified). To block multiple executions of ping
-and traceroute a PID file is created.
+are run by root. To block multiple executions of ping and traceroute a PID
+file is created.
 
-PID file for Traceroute: `/tmp/Traceroute_Device.IP.Diagnostics.TraceRoute`
+PID file for Traceroute: `/tmp/Traceroute_Device.IP.Diagnostics.TraceRoute.pid`
 
 If the user starts a new traceroute from the web the `/etc/ah/Traceroute.sh`
 will be called. One of the first lines states:
@@ -33,12 +33,14 @@ fill it with whatever PID's you want.
  2. `PIDFILE=/tmp/Traceroute_Device.IP.Diagnostics.TraceRoute`
  3. Choose which process you want to kill
    * List processes with `ps` (aux not needed ;)
+   * Select processes to kill.
    * `PIDS="1234 2345"`
  4. `ls $PIDFILE`
-   * Reboot if the file exists and start from the beginning.
-     (Exit shell and type `reboot`)
+    * If the file exists remove it. An existing PID file can be removed by
+      either rebooting the rooter or by starting a traceroute and cancel it
+      before it ends.
  5. Create file
-   * `echo "$PIDS">$PIDFILE`
+   * `echo "$PIDS" >"$PIDFILE"`
  6. Start traceroute to random host from web interface
  7. ????
  8. PROFIT!!!
