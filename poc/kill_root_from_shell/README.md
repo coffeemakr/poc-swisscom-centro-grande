@@ -5,11 +5,10 @@ web interface is able to kill processes with root rights.
 
 ## Description
 
-The web interface allows the execution of traceroute and ping. Both processes
-are run by root. To block multiple executions of ping and traceroute a PID
-file is created.
+The web interface allows the execution of traceroute. This command will
+be run as root. To block multiple executions of traceroute a PID file is created.
 
-PID file for Traceroute: `/tmp/Traceroute_Device.IP.Diagnostics.TraceRoute.pid`
+PID file: `/tmp/Traceroute_Device.IP.Diagnostics.TraceRoute.pid`
 
 If the user starts a new traceroute from the web the `/etc/ah/Traceroute.sh`
 will be called. One of the first lines states:
@@ -44,3 +43,7 @@ fill it with whatever PID's you want.
  6. Start traceroute to random host from web interface
  7. ????
  8. PROFIT!!!
+
+
+## Ping
+PID: `IPPing_Device.IP.Diagnostics.IPPing.pid`
