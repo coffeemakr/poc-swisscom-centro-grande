@@ -27,6 +27,14 @@ The script has to be run with administrator / root rights e.g.:
 $ sudo ./dns_spoofing.py
 ```
 
+![Screenshot attacker](img/screenshot-attacker.png)
+
+Use a (second) computer to try to connect to www.example.com over HTTP. The
+request will be displayed 
+
+![Screenshot victim](img/screenshot-victim.png)
+
+
 ### Requirements
  * python
  * scapy
