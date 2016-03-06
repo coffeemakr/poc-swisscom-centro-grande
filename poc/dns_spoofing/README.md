@@ -11,7 +11,7 @@ attacker. It's also possible to set spoof the address of multiple hosts by
 seperating them with a space: `www.example.com example.com`
 
 If a victim tries to visit the `www.example.com` (and doesn't use a static
-DNS server) the HTTP(S) request will be directed to the attacker.  
+DNS server) the HTTP(S) request will be directed to the attacker.
 
 ## Proof of Concept
 
