@@ -14,6 +14,13 @@ If a victim tries to visit the `www.example.com` (and doesn't use a static
 DNS server) the HTTP(S) request will be directed to the attacker.  
 
 ## Proof of Concept
+
+### Requirements
+ * python
+ * scapy
+ * cherrypy (for landing page)
+
+### Description
 The script `dns_spoofing.py` is python script which will send a DHCP request
 which by default spoofs the ip address of `www.example.com` and `example.com`.
 After this request the script starts a minimal HTTP server as a landing page.
@@ -27,18 +34,14 @@ The script has to be run with administrator / root rights e.g.:
 $ sudo ./dns_spoofing.py
 ```
 
+Use a (second) computer to try to connect to www.example.com over HTTP. The
+request will be displayed
+
+### Screenshot
+
 ![Screenshot attacker](img/screenshot-attacker.png)
 
-Use a (second) computer to try to connect to www.example.com over HTTP. The
-request will be displayed 
-
 ![Screenshot victim](img/screenshot-victim.png)
-
-
-### Requirements
- * python
- * scapy
- * cherrypy (for landing page)
 
 ## Mitigation
 ### Client side
