@@ -8,6 +8,7 @@ from __future__ import print_function
 import sys
 from scapy.all import *
 
+
 def send_dhcp_request(hostname):
     '''
     Send one dhcp request and wait for an answer.
@@ -39,10 +40,13 @@ def start_landing_server():
 
     cherrypy.server.socket_port = 80
     cherrypy.server.socket_host = '0.0.0.0'
+
     try:
-        cherrypy.quickstart(HelloWorld())
-    except:
-        print("Unable to start Server")
+        cherrypy.quickstart(LandingPage())
+    except Exception as e:
+        print("Unable to start Server: %s" % str(e))
+
+
 
 
 def main():
