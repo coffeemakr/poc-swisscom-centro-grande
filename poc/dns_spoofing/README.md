@@ -5,9 +5,9 @@ In order to resolve local hostnames to ip addresses the DNS server on the
 centro grande writes every hostname into its own [hosts file][1].
 The hostnames are provided by the DHCP requests.
 
-An attacker may craft a DCHP request which contains a hostname like
-`www.example.com`. This page will be resolved to the ip address of the
-attacker. It's also possible to set spoof the address of multiple hosts by
+An attacker in the same network may craft a DCHP request which contains a
+hostname like `www.example.com`. This page will be resolved to the ip address of
+the attacker. It's also possible to set spoof the address of multiple hosts by
 seperating them with a space: `www.example.com example.com`
 
 If a victim tries to visit the `www.example.com` (and doesn't use a static
