@@ -139,7 +139,7 @@ admin
 
 ### Some extra candy
 
-While writing this post if took a second look into the type definitions. There was a very interesting one.
+While writing this post I took a second look into the type definitions. There was a very interesting one.
 
 ```xml
 <PTYPE name="WIFI_PASSPHRASE"
@@ -154,7 +154,7 @@ If you try to write code injection with this one make sure your code has at leas
 Sanitizing insecure strings by using the type definition from the reference should be enough.
 
 ## TL;DR
-Paste the following code:
+Paste the following code in the restricted shell to access the real shell:
 `tcpdump enable file filter br0 \ "; /bin/sh -c /bin/sh \"`
 
 [1][http://clish.sourceforge.net/]
