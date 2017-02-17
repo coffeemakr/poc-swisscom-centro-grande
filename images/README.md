@@ -4,6 +4,14 @@
 According to my tests you have to be in a Swisscom (customer) network to
 download firmware images.
 
+These files can be downloaded from `http://rmsdl.bluewin.ch/pirelli/<filename>`. 
+
+### Mirror
+The mirror on tuxone.ch contains some additional versions which aren't available
+anymore.
+
+* ftp://ftp.tuxone.ch/Pirelli/Gen6 
+
 
 ## Version Info
 
@@ -23,14 +31,6 @@ download firmware images.
 | Vx226x1_61400.sig                     | yIMG  | 6.14.00R | 2014-10-30 11:46 | 96368_Swiss_S1 |
 | Vx226x1_61404.sig                     | yIMG  | 6.14.04R | 2015-09-22 11:10 | 96368_Swiss_S1 |
 | Vx226x1_61406.sig                     | yIMG  | [6.14.06R](image_6.14.06.md) | 2015-09-23 18:00 | 96368_Swiss_S1 |
-
-These files can be downloaded from `http://rmsdl.bluewin.ch/pirelli/`. 
-
-### Mirror
-The mirror on tuxone.ch contains some additional versions which aren't available
-anymore.
-
-* ftp://ftp.tuxone.ch/Pirelli/Gen6 
 
 
 ## Thanks
