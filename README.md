@@ -1,6 +1,6 @@
 # Proof of Concept Scripts
 
-## Known Security Holes
+## Security Issues
 ### 6.14.06
 * [XSS with Hostname](poc/xss_hostname/)
 * [DNS spoofing with DHCP](poc/dns_spoofing/)
